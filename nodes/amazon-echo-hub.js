@@ -11,9 +11,10 @@ module.exports = function(RED) {
     var hubNode = this;
 
     var port = config.port > 0 && config.port < 65536 ? config.port : 80;
+    var ipAddr = config.ipAddr ;
 
     // Start SSDP service
-    var ssdpServer = ssdp(port, config);
+    var ssdpServer = ssdp(port,  config);
     if (config.discovery) {
       ssdpServer.start();
     }
@@ -35,7 +36,7 @@ module.exports = function(RED) {
       return;
     });
 
-    httpServer.listen(port, function(error) {
+    httpServer.listen(port, ipAddr, function(error) {
 
       if (error) {
         hubNode.status({
@@ -269,15 +270,16 @@ module.exports = function(RED) {
       payloadHandler(hubNode, req.params.id);
     });
 
-  }
+}
 
   //
   // SSDP
   //
-  function ssdp(port, config) {
+  function ssdp(port, ipAddr , config) {
 
     var ssdpService = require('node-ssdp').Server,
       server = new ssdpService({
+        interfaces:[ipAddr],
         location: {
           port: port,
           path: '/description.xml'
