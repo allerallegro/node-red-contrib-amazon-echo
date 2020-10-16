@@ -13,7 +13,7 @@ or
 
 Install using npm
 
-    $ npm install node-red-contrib-amazon-echo
+    $ npm install node-red-contrib-amazon-echo-aller
 
 ## How to use
   * Add **Amazon Echo Hub** node your flow

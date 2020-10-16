@@ -14,7 +14,7 @@ module.exports = function(RED) {
     var ipAddr = config.ipAddr ;
 
     // Start SSDP service
-    var ssdpServer = ssdp(port,  config);
+    var ssdpServer = ssdp(port, ipAddr, config);
     if (config.discovery) {
       ssdpServer.start();
     }

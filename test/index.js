@@ -1,4 +1,4 @@
-var common = require("./common.js");
+npm var common = require("./common.js");
 
 var helper = common.helper;
 
