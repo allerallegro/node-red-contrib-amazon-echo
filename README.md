@@ -1,4 +1,4 @@
-# node-red-contrib-amazon-echo
+# node-red-contrib-amazon-echo-aller
 
 Alexa controlled Node-Red nodes supporting latest Amazon Echo devices
 
@@ -21,7 +21,7 @@ Install using npm
   Note: Use unique names for device nodes. Alexa will use the node name to manage your smart device
   * Ask **"Alexa, discover devices"** or start the discover procedure from the Alexa mobile app
 
-![Usage screenshot](https://raw.githubusercontent.com/datech/node-red-contrib-amazon-echo/master/docs/images/how-to-use.png "Screenshot")
+![Usage screenshot](https://raw.githubusercontent.com/datech/node-red-contrib-amazon-echo-aller/master/docs/images/how-to-use.png "Screenshot")
 
 ## Features
   * Turning on/off
@@ -49,7 +49,7 @@ Amazon Echo Hub node is starting a service listening on port 80 which requires N
 **No additional settings are needed if Node-Red is started as Home Assistant add-on**
 
 ## Troubleshooting
-Detailed troubleshooting instructions can be found on the [Wiki](https://github.com/datech/node-red-contrib-amazon-echo/wiki)
+Detailed troubleshooting instructions can be found on the [Wiki](https://github.com/datech/node-red-contrib-amazon-echo-aller/wiki)
 
 ## Bugs and feature requests
-Please create an issue in [GitHub](https://github.com/datech/node-red-contrib-amazon-echo/issues)
+Please create an issue in [GitHub](https://github.com/datech/node-red-contrib-amazon-echo-aller/issues)
